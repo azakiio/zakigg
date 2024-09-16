@@ -53,9 +53,10 @@
 	<div class="flex mb-8 justify-center gap-2">
 		{#each data as { icon }, i}
 			<button
-				class="tabs-btn btn p-4 rounded-full shadow bg-base-3"
+				class="btn p-4 rounded-full shadow bg-base-3"
 				style="transition: 0.3s;"
 				class:bg-primary-3={tabs.activeIndex === i}
+				class:text-primary-content={tabs.activeIndex === i}
 				onclick={() => scrollTab(i)}
 			>
 				<Icon class="w-8 h-8" {icon}></Icon>
@@ -69,11 +70,14 @@
 		style="overflow: {tabs.isTrigger ? 'hidden' : 'auto'}"
 	>
 		{#each data as { title, Content }, i}
-			<div class="w-full flex-shrink-0 overflow-auto flex flex-col snap-center pb-4" data-index={i}>
-				<h3>{title}</h3>
+			<div
+				class="w-full flex-shrink-0 overflow-auto flex flex-col snap-center pb-4 gap-4"
+				data-index={i}
+			>
+				<h3 class="H3">{title}</h3>
 				<Content></Content>
 				<button
-					class="btn bg-primary-3 ml-a mx-4 rounded-full p-4 shadow"
+					class="btn bg-primary-3 text-primary-content ml-a mx-4 rounded-full p-4 shadow"
 					class:invisible={tabs.activeIndex === data.length - 1}
 					onclick={() => scrollTab(tabs.activeIndex + 1)}
 				>

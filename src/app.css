@@ -3,10 +3,31 @@
 @import '@fontsource-variable/inter';
 
 :root {
-	--font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+body:has(dialog[open]) {
+	overflow: hidden;
+	scrollbar-gutter: stable;
+}
+
+:root *::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 8px;
+	height: 8px;
+}
+
+:root *::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+:root *::-webkit-scrollbar-thumb {
+	background-color: var(--n);
+	border-radius: 1rem;
 }
 
 body {
@@ -17,31 +38,27 @@ body {
 	@apply bg-base-0 color-base-content;
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+.H1 {
+	@apply text-4xl font-bold;
+}
+.H2 {
+	@apply text-3xl font-bold;
+}
+.H3 {
+	@apply text-2xl font-bold;
+}
+.H4 {
+	@apply text-xl font-bold;
+}
+.H5 {
+	@apply text-lg font-bold;
+}
+.H6 {
+	@apply text-base font-bold;
 }
 
 p {
 	line-height: 1.5;
-}
-
-a {
-	color: var(--color-primary-4);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h1 {
-	@apply text-4xl;
-}
-
-h2 {
-	font-size: 1rem;
 }
 
 pre {
@@ -75,20 +92,17 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-}
+/* CUstom css */
+p a,
+.slide-link {
+	@apply text-primary bg-gradient-to-b from-transparent from-50% to-primary to-50%;
+	background-size: auto 185%;
+	transition:
+		background 0.3s,
+		color 0.3s;
 
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
+	&:hover {
+		background-position-y: 100%;
+		color: white;
+	}
 }

@@ -46,7 +46,7 @@
 	the triggers.
 </p>
 
-<div class="flex items-center gap-1 mb-4">
+<div class="flex items-center gap-1">
 	<code class="mr-2">overflow:</code>
 	<code class:saturate-25={tabs.isTrigger}>auto</code>
 	<Toggle bind:checked={tabs.isTrigger}></Toggle>

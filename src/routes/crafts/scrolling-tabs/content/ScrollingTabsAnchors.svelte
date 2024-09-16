@@ -48,7 +48,8 @@
 				href="#{title}"
 				class="btn rounded-full bg-base3"
 				style="transition: 0.3s;"
-				class:bg-primary-1={activeIndex === i}
+				class:bg-primary-5={activeIndex === i}
+				class:text-primary-content={activeIndex === i}
 			>
 				{i + 1}
 			</a>

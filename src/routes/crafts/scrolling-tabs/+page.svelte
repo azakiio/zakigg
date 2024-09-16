@@ -4,14 +4,14 @@
 	import ScrollingTabsAnchors from './content/ScrollingTabsAnchors.svelte';
 </script>
 
-<section class="layout max-w-2xl">
-	<a href="/" class="btn w-fit p-0 border-0 mb-6 text-primary">
+<section class="layout max-w-2xl gap-4">
+	<a href="/" class="btn w-fit p-0 border-0 mb-2 text-primary">
 		<Icon icon="ep:top-left" />Back
 	</a>
 
 	<hgroup>
-		<h1 class="text-xl">Scrolling Tabs</h1>
-		<p>April 2024</p>
+		<h1 class="H4">Scrolling Tabs</h1>
+		<p class="text-base-7">April 2024</p>
 	</hgroup>
 	<p>My attempt at tackling this common design pattern.</p>
 	<!--more-->
@@ -29,27 +29,28 @@
 		Instead, I'd just like to explore what's possible using some basic CSS and JavaScript.
 	</p>
 	<ScrollingTabs />
-	<h2 id="bloopers">Bloopers</h2>
+	<h2 class="H3">Bloopers</h2>
+
 	<p>
-		I would've loved to implement a version with no javascript by using <strong>anchor tags</strong>
-		for the triggers — <code>{'<a href="#slide-id"...'}</code> (and I did).
+		I would have loved to implement a version without JavaScript, using anchor tags as triggers — <code
+			>{'<a href="#slide-id"...'}</code
+		> (which I did).
 	</p>
-	<p><strong>Unfortunately, it's pretty buggy:</strong></p>
+
+	<p><strong>However, it's a bit limited:</strong></p>
 	<ul class="list-disc-outside mb-4 p-s-5">
 		<li>
-			Most browsers scroll the tabs component to the top of the page first
-			<br />
-			(I can't seem to find a way around this)
+			Most browsers first scroll the entire page to the anchor, then to the correct slide. In some
+			cases, this behavior might be desired, but it's not ideal for a carousel.
 		</li>
-		<li>Slides don't line up correctly (notice the border being cut off).</li>
+		<li>The slides don’t always line up correctly (you may notice the border being cut off).</li>
 	</ul>
-	<p>Nonetheless, I've shared the implementation below if you'd like to play around with it.</p>
-	<ScrollingTabsAnchors />
 	<p>
-		If anyone knows why this is happening please <a href="mailto:a@zaki.gg">let me know!</a>. I'd
-		love to revisit this idea in the future.
+		I think we need at least some JavaScript for a fully functional carousel. Nonetheless, I’ve
+		shared the implementation below if you’d like to experiment with it.
 	</p>
-	<h2 id="that-s-a-wrap-">That's a wrap!</h2>
+	<ScrollingTabsAnchors />
+	<h2 class="H3">That's a wrap!</h2>
 	<p>
 		I hope you learned something from this <em>Craft.</em> I had a lot of fun putting it together :)
 	</p>
@@ -62,8 +63,8 @@
 		you down the road.
 	</p>
 	<p>
-		If you have any feedback or suggestions, or just wanna chat, feel free to <a
-			href="mailto:a@zaki.gg">reach out</a
-		>!
+		If you have any feedback, suggestions, or just wanna chat, feel free to <a
+			href="mailto:a@zaki.gg">reach out!</a
+		>
 	</p>
 </section>

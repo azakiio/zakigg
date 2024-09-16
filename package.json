@@ -43,6 +43,7 @@
 		"@speed-highlight/core": "^1.2.6",
 		"@types/prismjs": "^1.26.4",
 		"highlight.js": "^11.10.0",
+		"marked": "^14.1.2",
 		"prismjs": "^1.29.0",
 		"radash": "^12.1.0"
 	}
