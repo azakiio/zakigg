@@ -92,7 +92,7 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-/* CUstom css */
+/* Custom css */
 p a,
 .slide-link {
 	@apply text-primary bg-gradient-to-b from-transparent from-50% to-primary to-50%;
