@@ -7,7 +7,7 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	font-family: var(--font-body);
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body:has(dialog[open]) {
@@ -26,7 +26,7 @@ body:has(dialog[open]) {
 }
 
 :root *::-webkit-scrollbar-thumb {
-	background-color: var(--n);
+	background-color: var(--b7);
 	border-radius: 1rem;
 }
 
@@ -38,21 +38,27 @@ body {
 	@apply bg-base-0 color-base-content;
 }
 
+h1,
 .H1 {
 	@apply text-4xl font-bold;
 }
+h2,
 .H2 {
 	@apply text-3xl font-bold;
 }
+h3,
 .H3 {
 	@apply text-2xl font-bold;
 }
+h4,
 .H4 {
 	@apply text-xl font-bold;
 }
+h5,
 .H5 {
 	@apply text-lg font-bold;
 }
+h6,
 .H6 {
 	@apply text-base font-bold;
 }

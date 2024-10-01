@@ -1,10 +1,10 @@
-import TurboMenu from "~/assets/logos/turbomenu-icon.svg";
-import Quickset from "~/assets/logos/quickset.svg";
+import TurboMenu from "./assets/turbomenu-icon.svg";
+import Quickset from "./assets/quickset.svg";
 
-import Konrad from "~/assets/logos/konrad.svg";
-import Procter from "~/assets/logos/procter.svg";
-import uoft from "~/assets/logos/uoft.svg";
-import Siteful from "~/assets/logos/siteful.svg";
+import Konrad from "./assets/konrad.svg";
+import Procter from "./assets/procter.svg";
+import uoft from "./assets/uoft.svg";
+import Siteful from "./assets/siteful.svg";
 
 export const projects = [
   {
@@ -115,13 +115,13 @@ export const skills = {
     { label: "React", icon: "logos:react" },
     { label: "Next.js", icon: "logos:nextjs-icon" },
     { label: "Remix", icon: "logos:remix-icon" },
-    { label: "Gatsby", icon: "logos:gatsby" },
+    // { label: "Gatsby", icon: "logos:gatsby" },
     { label: "Vue", icon: "logos:vue" },
     { label: "Svelte", icon: "logos:svelte-icon" },
     { label: "Astro", icon: "logos:astro-icon" },
     { label: "Phoenix", icon: "logos:phoenix" },
     { label: "CSS", icon: "devicon:css3" },
-    { label: "Tailwind", icon: "logos:tailwindcss-icon" },
+    // { label: "Tailwind", icon: "logos:tailwindcss-icon" },
   ],
   backendDevelopment: [
     { label: "Node.js", icon: "logos:nodejs-icon" },

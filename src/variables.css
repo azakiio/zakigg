@@ -274,9 +274,11 @@
 	--b8: var(--color-gray-8);
 	--b9: var(--color-gray-9);
 	--bc: var(--color-gray-9);
+	color-scheme: light;
 }
 
 [data-theme='dark'] {
+	color-scheme: dark;
 	--b0: var(--color-dark-9);
 	--b1: var(--color-dark-8);
 	--b2: var(--color-dark-7);
