@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { data, useScrollingTabs } from './Tabs.svelte';
 

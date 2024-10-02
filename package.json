@@ -12,12 +12,9 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.1.0",
-		"@neoconfetti/svelte": "^2.2.1",
 		"@sveltejs/adapter-auto": "^3.2.5",
 		"@sveltejs/kit": "^2.6.1",
 		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
-		"@tailwindcss/postcss": "4.0.0-alpha.19",
-		"@tailwindcss/vite": "4.0.0-alpha.19",
 		"@types/eslint": "^9.6.1",
 		"@unocss/extractor-svelte": "^0.63.2",
 		"@unocss/reset": "^0.63.2",

@@ -108,32 +108,6 @@
 </div>
 
 <style scoped>
-	a:hover > .label {
-		opacity: 1;
-		scale: 1 1;
-	}
-
-	a:hover > .icon {
-		opacity: 1;
-		scale: 1.2;
-	}
-
-	.label {
-		bottom: 100%;
-		position: absolute;
-		opacity: 0;
-		scale: 1 0;
-		will-change: scale, opacity;
-		transition:
-			scale 0.4s,
-			opacity 0.4s;
-		transform-origin: bottom;
-	}
-
-	.dock-container {
-		@apply flex justify-center items-center w-full;
-	}
-
 	.dock {
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 		transition: translate 0.3s;

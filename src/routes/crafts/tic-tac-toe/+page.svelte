@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { AI, bestMove, checkWinner, EMPTY, HUMAN } from './minimax';
 
