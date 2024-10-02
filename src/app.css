@@ -1,6 +1,47 @@
-@import './variables.css';
 @import '@fontsource/fira-mono';
 @import '@fontsource-variable/inter';
+
+:root {
+	color-scheme: light;
+	--p0: var(--color-0);
+	--p1: var(--color-1);
+	--p2: var(--color-2);
+	--p3: var(--color-3);
+	--p4: var(--color-4);
+	--p5: var(--color-5);
+	--p6: var(--color-6);
+	--p7: var(--color-7);
+	--p8: var(--color-8);
+	--p9: var(--color-9);
+	--pc: var(--color-12);
+
+	--b0: var(--gray-0);
+	--b1: var(--gray-1);
+	--b2: var(--gray-2);
+	--b3: var(--gray-3);
+	--b4: var(--gray-4);
+	--b5: var(--gray-5);
+	--b6: var(--gray-6);
+	--b7: var(--gray-7);
+	--b8: var(--gray-8);
+	--b9: var(--gray-9);
+	--bc: var(--gray-10);
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--b0: var(--gray-10);
+	--b1: var(--gray-9);
+	--b2: var(--gray-8);
+	--b3: var(--gray-7);
+	--b4: var(--gray-6);
+	--b5: var(--gray-5);
+	--b6: var(--gray-4);
+	--b7: var(--gray-3);
+	--b8: var(--gray-2);
+	--b9: var(--gray-1);
+	--bc: var(--gray-3);
+}
 
 :root {
 	--font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -35,7 +76,7 @@ body {
 	margin: 0;
 	background-attachment: fixed;
 	background-size: 100vw 100vh;
-	@apply bg-base-0 color-base-content;
+	@apply bg-base-0 text-base-content;
 }
 
 h1,
@@ -58,9 +99,10 @@ h5,
 .H5 {
 	@apply text-lg font-bold;
 }
+
 h6,
 .H6 {
-	@apply text-base font-bold;
+	@apply font-bold;
 }
 
 p {
@@ -109,6 +151,6 @@ p a,
 
 	&:hover {
 		background-position-y: 100%;
-		color: white;
+		color: var(--p0);
 	}
 }

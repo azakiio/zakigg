@@ -6,19 +6,19 @@
 
 	const theme = useTheme();
 	const links = [
-		{ label: 'Home', path: '/', icon: 'hugeicons:home-02' },
-		{ label: 'Resume', path: '/resume', icon: 'hugeicons:suit-02' },
-		{ label: 'Crafts', path: '/crafts', icon: 'hugeicons:pencil' },
-		{ label: 'Projects', path: '/projects', icon: 'hugeicons:idea-01' }
+		{ label: 'Home', path: '/', icon: 'line-md:home' },
+		{ label: 'Resume', path: '/resume', icon: 'line-md:file-document' },
+		{ label: 'Crafts', path: '/crafts', icon: 'line-md:pencil' },
+		{ label: 'Projects', path: '/projects', icon: 'line-md:lightbulb' }
 	];
 	const socials = [
-		{ label: 'GitHub', path: 'https://github.com/azakiio', icon: 'hugeicons:github-01' },
+		{ label: 'GitHub', path: 'https://github.com/azakiio', icon: 'line-md:github' },
 		{
 			label: 'LinkedIn',
 			path: 'https://linkedin.com/in/adhamzaki/',
-			icon: 'hugeicons:linkedin-01'
+			icon: 'line-md:link'
 		},
-		{ label: 'Mail', path: 'mailto:a@zaki.gg', icon: 'hugeicons:mail-01' }
+		{ label: 'Mail', path: 'mailto:a@zaki.gg', icon: 'line-md:email' }
 	];
 
 	let isHidden = $state(false);
@@ -63,7 +63,7 @@
 </script>
 
 <header
-	class="fixed bottom-4 w-fit z-999 flex bg-base-3/70 rounded-full p-2 dock left-1/2 backdrop-blur items-end h-14 print:hidden"
+	class="fixed bottom-4 w-fit z-999 flex bg-base-2/70 rounded-full p-2 dock left-1/2 backdrop-blur items-end h-14 print:hidden"
 	style:translate="-50% {isHidden ? '200%' : '0%'}"
 >
 	{#each links as link}
@@ -87,15 +87,18 @@
 
 	<button class="dock-item" onclick={theme.toggle}>
 		<div class="tooltip">Toggle Theme</div>
-		<Icon
-			icon={theme.theme === 'light' ? 'hugeicons:moon-02' : 'hugeicons:sun-01'}
-			class="w-full h-full"
-		/>
+		<Icon icon={theme.theme === 'light' ? 'line-md:moon' : 'line-md:sunny'} class="w-full h-full" />
+	</button>
+
+	<button class="dock-item" onclick={theme.toggleHue}>
+		<div class="tooltip">Toggle Color</div>
+		<!-- <div class="aspect-square h-full rounded-full"></div> -->
+    <Icon icon="line-md:paint-drop-filled" class="w-full h-full" style="color: var(--color-4)" ></Icon>
 	</button>
 
 	<button class="dock-item" onclick={() => (isHidden = true)}>
 		<div class="tooltip">Close Dock</div>
-		<Icon icon="hugeicons:cancel-01" class="w-full h-full"></Icon>
+		<Icon icon="line-md:close-circle" class="w-full h-full"></Icon>
 	</button>
 </header>
 <div
@@ -109,13 +112,15 @@
 
 <style scoped>
 	.dock {
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+		/* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+     */
+		box-shadow: var(--shadow-2);
 		transition: translate 0.3s;
 		transform-origin: bottom;
 	}
 
 	.dock-item {
-		@apply relative rounded-full w-12 h-10 p-0.5 font-bold;
+		@apply relative rounded-full w-12 h-10 p-0.5 font-bold flex items-center justify-center;
 		/* will-change: width, height;
     transition-property: width, height;
     transition-duration: 0.1s; */

@@ -2,18 +2,21 @@
 	import { onNavigate } from '$app/navigation';
 	import '@unocss/reset/tailwind.css';
 	import 'virtual:uno.css';
+	import 'open-props/open-props.min.css';
+	import 'open-props/colors-oklch.min.css';
+	import 'open-props/oklch-hues.min.css';
 	import '../app.css';
 	import Header from './Header.svelte';
 
-	onNavigate((navigation) => {
-		if (!document.startViewTransition) return;
-		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-			});
-		});
-	});
+	// onNavigate((navigation) => {
+	// 	if (!document.startViewTransition) return;
+	// 	return new Promise((resolve) => {
+	// 		document.startViewTransition(async () => {
+	// 			resolve();
+	// 			await navigation.complete;
+	// 		});
+	// 	});
+	// });
 </script>
 
 <div class="app">

@@ -63,7 +63,7 @@
 	<section class="grid gap-4 col-span-full">
 		<h2>Experience</h2>
 		<div
-			class="max-w-full grid overflow-auto gap-6 pb-4"
+			class="max-w-full grid overflow-x-auto gap-6 pb-4"
 			style="grid-template-columns: repeat({experiences.length}, 500px);"
 		>
 			{#each experiences as experience}
