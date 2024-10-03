@@ -11,7 +11,7 @@
 
 	<hgroup>
 		<h1 class="H4">Scrolling Tabs</h1>
-		<p class="text-base-7">April 2024</p>
+		<p class="text-base-6">April 2024</p>
 	</hgroup>
 	<p>My attempt at tackling this common design pattern.</p>
 	<!--more-->
