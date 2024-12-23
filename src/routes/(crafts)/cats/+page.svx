@@ -1,0 +1,61 @@
+---
+title: Cats!
+date: 2024-12-22
+draft: false
+---
+
+<script>
+  import Icon from '@iconify/svelte';
+  import video from './instructions.mp4';
+  let reveal = false;
+</script>
+
+{#if reveal}
+
+<div>
+2208-290 Adelaide St W
+(if needed buzz is 2208)
+</div>
+{:else}
+
+<button onclick={() => reveal = !reveal} class="btn bg-surface-1 justify-self-start">
+{reveal ? 'Hide' : 'Reveal'}
+<Icon icon="mdi:map-marker" />
+</button>
+{/if}
+
+## Food (per cat):
+
+- 1/4 can of wet food per day
+  - wet food middle shelf by couch
+  - There are lids beside the cans so you can fridge opened cans (but the lids kinda suck)
+  - When serving fridge food you can just mash it a little with a fork to break it up and make it easier to eat
+  - You can just rinse the food bowls and reuse
+- 1/4 cup (60ml) dry food per day (scoop in the bag)
+  - dry food above microwave
+
+## Water:
+
+- Juno’s bowl in the living room, Wally’s in bedroom
+- Replace maybe every other day or if the water begins to look cloudy
+
+## Litter:
+
+- Box is in the den, and there’s this litter collection box (see video)
+- If possible, scoop daily cuz 2 cats
+
+## Toys:
+
+- They both like the fishing rod with no attachments lol but feel free to play with whatever
+- Toys and other stuff will be in the second shelf by the kitchen
+- Sometime I’ll sprinkle a little catnip on the hammock (for wally) and the bottom of the cat tree for juno
+
+## Other:
+
+- Wifi is **wally** and password is **whatdoyoumean**
+- Feel free to hangout and use whatever you want, ring pull-ups and dips easy
+
+<figure class="max-w-60 w-full mx-auto my-4">
+  <video src={video} controls class="rounded-lg mb-2" />
+  <figcaption class="text-center text-content-2">Visual Guide</figcaption>
+</figure>
