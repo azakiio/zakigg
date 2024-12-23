@@ -52,7 +52,7 @@ draft: false
 
 ## Other:
 
-- Wifi is **wally** and password is **whatdoyoumean**
+- Wifi is **wally's** and password is **whatdoyoumean**
 - Feel free to hangout and use whatever you want, ring pull-ups and dips easy
 
 <figure class="max-w-60 w-full mx-auto my-4">
