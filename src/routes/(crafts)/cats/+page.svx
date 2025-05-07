@@ -18,7 +18,7 @@ draft: true
 </div>
 {:else}
 
-<button onclick={() => reveal = !reveal} class="btn bg-surface-1 justify-self-start">
+<button onclick={() => reveal = !reveal} class="btn bg-base-200 justify-self-start">
 {reveal ? 'Hide' : 'Reveal'}
 <Icon icon="mdi:map-marker" />
 </button>
@@ -57,5 +57,5 @@ draft: true
 
 <figure class="max-w-60 w-full mx-auto my-4">
   <video src={video} controls class="rounded-lg mb-2" />
-  <figcaption class="text-center text-content-2">Visual Guide</figcaption>
+  <figcaption class="text-center text-base-content">Visual Guide</figcaption>
 </figure>
